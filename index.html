@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <h1>Editable Resume Builder By FAQEHA NOOR</h1>
+
+   <form id="resumeForm">
+
+    <fieldset>
+
+        <legend>Personal Information</legend>
+
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required > <br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required > <br>
+
+        <label for="phone">Phone: </label>
+        <input type="tel" name="phone" id="phone" required > <br>
+
+        <label for="picture">Profile picture</label>
+        <input type="file" id="picture" name="picture" accept="image/." required>
+
+    </fieldset>
+
+ <fieldset>
+
+       <legend>Education</legend>
+        <label for="education">Education</label>
+       <textarea id="education" name="education" rows="4" required></textarea> <br>
+
+ </fieldset> 
+
+
+<fieldset>
+    
+    <legend for="experience">Experience</legend>
+    <textarea id="experience" name="experience" rows="4" required></textarea> <br>
+
+</fieldset> 
+
+<fieldset>
+    
+    <legend for="skills">Skills</legend>
+    <textarea id="skills" name="skills" rows="4" required></textarea> <br>
+
+</fieldset> 
+
+<button type="submit">Download Resume!</button>
+
+   </form>
+   
+   <div id = "resumeOutput">
+
+   </div>
+
+   <script src="script.ts"> </script>
+
+</body>
+</html>
